@@ -53,7 +53,7 @@ public class BaseClass {
        public void configBC(/*String browser*/) throws IOException {
     	   System.out.println("===Launch the browser===");
     	  //String BROWSER = browser;//putil.getDataFromPropertyFile("Browser");
-    	  String BROWSER = System.getProperty("browser", putil.getDataFromPropertyFile("Browser"));
+    	  String BROWSER = System.getProperty("Browser", putil.getDataFromPropertyFile("Browser"));
     	   if(BROWSER.equalsIgnoreCase("Chrome")) {
     		   driver = new ChromeDriver();
     	   }else if(BROWSER.equalsIgnoreCase("Firefox")) {
